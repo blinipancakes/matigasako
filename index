@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>NewsBlin</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../img/theboiscool.png" type="image/jpeg">
+
+</head>
+<body>    
+        <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">Main</a></li>
+                        <li><a href="../blinipancakes/meme.html">Memes</a></li>
+                        <li><a href="#band">Tubero Fanpage</a></li>
+                        <li><a href="#others">Others</a></li>
+                      </ul>
+                    </nav>
+                <div class="wrapper">
+                  <section id="home">
+                    <h1>Einstein</h1>
+                    <p class="lead">Second Year Einstein<br>S.Y 2019-2020</p>
+                  </section>
+                  <section id="new">
+                      <h1>vP StRIKES aGa1n</h1>
+                      <p class="lead"></p>
+                      <a href="../blinipancakes/meme.html" class="news">More Memes..</a>
+                  </section>
+                  
+                  <section id="vid">
+                    <video width="100%" height="100%" controls>
+                      <source src="../img/video.mp4" type="video/mp4">
+                      <source src="../img/video.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>                    
+                  </section> 
+    
+                  <section id="band">
+                      <h1>Tubero</h1>
+
+                   
+                      <a href="../blinipancakes/tubero.html" class="news">Go to Tubero Website..</a>
+                  </section>
+                  <section id="TravisKraft">
+                    <h1></h1>
+                    <div class="iframe-container">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/nYyUk1Wb24M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://www.youtube.com/channel/UC1712XEXMIRQW1-spPVK0Ng" class="news">Subscribe to Travis Kraft</a>
+                  </section>
+                  <section id="others">
+                      <h1>Want to be featured?</h1>
+                      <p class=""></p>
+                      <a href="" class="news">More..</a>
+                  </section>
+                </div>
+        </div>
+
+
+
+</html>
+
+
+------------
+            </div>
+                <div class="wrap">
+                <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>  
+            </div>
+------------
