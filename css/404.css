@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: "Roboto Black", sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+  background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/ano.jpg') no-repeat center center/cover;;
+  
+}
+
+.news
+{
+  font-family: "Roboto Black", sans-serif;
+  text-decoration: none;
+  padding: 10px 10px;
+  color:#f4f4f4;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+}
+.news:hover
+{
+  font-family: "Roboto Thin",sans-serif;
+
+}
+body p
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
