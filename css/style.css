@@ -4,9 +4,18 @@
 }
 
 :root {
-  --background: rgba(0, 0, 0);
+  background: rgba(0, 0, 0);
 }
+.head
+{
+  background: #000;
 
+}
+.head nav ul
+{
+  background: #000;
+  height: 1500px;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -37,10 +46,18 @@ body {
   place-items: center;
   background-position: center;
   background-repeat: no-repeat;
+
+}
+.text
+{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   font-size: 50px;
   font-family: "Roboto", sans-serif;
 }
-
 #gallery {
   height: 100%;
   width:100%;
@@ -58,8 +75,10 @@ body {
 
 
 #news {
-  height: 100%;
-  width:100%;
+  width: 100%;
+  height: 100%;  
+  display: flex;
+  justify-content: center;
 
   background-color: #000;
   background-blend-mode: multiply;
@@ -150,6 +169,7 @@ nav ul {
 }
 
 nav li {
+  
   margin-bottom: 1em;
   margin-left: 1em;
 }
@@ -157,10 +177,13 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   opacity: 0;
+  text-align: center;
   transition: opacity 150ms ease-in-out;
+  display: block;
+  padding: 20px;
 }
 
 nav a:hover {
