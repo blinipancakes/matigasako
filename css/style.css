@@ -4,9 +4,18 @@
 }
 
 :root {
-  --background: rgba(0, 0, 0);
+  background: rgba(0, 0, 0);
 }
+.head
+{
+  background: #000;
 
+}
+.head nav ul
+{
+  background: #000;
+  height: 100%;
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -19,65 +28,22 @@ body {
     height: 100vh;
     line-height: 1.6;
     overflow: hidden;
+
+    
+    
+}
+.body1
+{
+      /* CSS Smooth Scroll */
     overflow-y: scroll; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    
-    
 }
-/* parts */
-#home {
-  height: 100%;
-  width:100%;
-  background-image: url(../img/f1.jpg);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 50px;
-  font-family: "Roboto", sans-serif;
-}
-
-#gallery {
-  height: 100%;
-  width:100%;
-  background-image: url(../img/fu.jpg);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 50px;
-  font-family: "Roboto", sans-serif;
-}
-
-
-#news {
-  height: 100%;
-  width:100%;
-
-  background-color: #000;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  
-}
-
 
 /* navigation styles start here */
 
 header {
-  background: var(--background);
+
   text-align: center;
   position: fixed;
   z-index: 999;
@@ -136,7 +102,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--background);
+  background: black;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -150,6 +116,7 @@ nav ul {
 }
 
 nav li {
+  
   margin-bottom: 1em;
   margin-left: 1em;
 }
@@ -157,10 +124,13 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   opacity: 0;
+
   transition: opacity 150ms ease-in-out;
+  display: block;
+
 }
 
 nav a:hover {
@@ -253,95 +223,123 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 0px;
   text-align: center;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: auto;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 * {
   box-sizing: border-box;
 }
 
 .responsive {
-  width: 49.99999%;
-  margin: 6px 25%;
-}
-.imgcontainer
-{
-  width: 55%;
-  position: absolute;
-  top: 70%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+
 }
 
-.imgcontainer2
-{
-
-  position: absolute;
-  top: 70%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-}
-/*adjustments */
-
-
-
-
-@media only screen and (max-width: 910px) {
+@media only screen and (min-width: 0px) {
   .responsive {
     width: 49.99999%;
-    margin: 0 25%;
+    margin: 6px 25%;
   }
-  /*.imgcontainer
-  {
-  margin: 0 25%;
-  }*/
-
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
-    margin: 0 0%;
   }
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+/*test*/
+
+  /* Section Images */
+  
+  section#others {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/bigbais.jpg') no-repeat center center/cover;;
+  }
+   
+  section#main {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('../img/xmas.jpg') no-repeat center center/cover;;
+  }   
+  section#new {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/ag.jpg') no-repeat center center/cover;;
+  }  
+    
+  section#gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/fu.jpg') no-repeat center center/cover;;
+  } 
+  section#event {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/heycantstopusall.jpg') no-repeat center center/cover;;
+  }   
+
+  .news
+  {
+    text-decoration: none;
+    padding: 10px 10px;
+    color:#f4f4f4;
+    
+  }
+ .news:hover
+  {
+    color: skyblue;
+
+  }
+  .iframe-container{
+    position: relative;
+    width: 90%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  section h1 {
+    font-size: 4rem;
+  }
+    
+  .container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+        
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
