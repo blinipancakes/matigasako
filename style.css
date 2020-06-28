@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url('rick.gif') no-repeat center center/cover;;
+}
