@@ -3,246 +3,36 @@
   padding: 0;
 }
 
-:root {
-  --background: rgba(0, 0, 0);
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-	  margin: 0;
-    font-family: "Roboto", sans-serif;
+  
+  :root {
+    background: rgba(0, 0, 0);
+  }
+  .head
+  {
     background: #000;
-    color: #fff;
-    height: 100vh;
-    line-height: 1.6;
-    overflow: hidden;
-    overflow-y: scroll; 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    
-    
-}
-/* parts */
-#home {
-  height: 100%;
-  width:100%;
-  background-image: url(../img/f1.jpg);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 50px;
-  font-family: "Roboto", sans-serif;
-}
-
-#gallery {
-  height: 100%;
-  width:100%;
-  background-image: url(../img/fu.jpg);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 50px;
-  font-family: "Roboto", sans-serif;
-}
-
-
-#news {
-  height: 100%;
-  width:100%;
-
-  background-color: #000;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
   
-}
-
-
-/* navigation styles start here */
-
-header {
-  background: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-}
-
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(rgb(252, 153, 0), .75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background:rgb(252, 153, 0);
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background: var(--background);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-
-nav a:hover {
-  color: rgb(252, 153, 0);
-}
-
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
-@media screen and (max-width: 0px) {
-  .nav-toggle-label {
-    display: none;
   }
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  .head nav ul
+  {
+    background: #000;
+    height: 100%;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
   }
   
-  .logo {
-    grid-column: 2 / 3;
-  }
+  body {
+        margin: 0;
+      font-family: "Roboto", sans-serif;
+      background: #000;
+      color: #fff;
+      height: 100vh;
+      line-height: 1.6;
+      overflow: hidden;
   
-  nav {
-    all: unset; /* this causes issues with Edge, since it's unsupported */
-    
-    /* the following lines are not from my video, but add Edge support */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1,1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
-    
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+      
+      
   }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-  
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-  
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: rgb(252, 153, 0);
-    position: absolute;
-    top: 1em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
-  }
-  
-}
-
-/* NAVBAR   END */
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -253,95 +43,131 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 0px;
   text-align: center;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: auto;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 * {
   box-sizing: border-box;
 }
 
 .responsive {
-  width: 49.99999%;
-  margin: 6px 25%;
-}
-.imgcontainer
-{
-  width: 55%;
-  position: absolute;
-  top: 70%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+
 }
 
-.imgcontainer2
-{
-
-  position: absolute;
-  top: 70%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-}
-/*adjustments */
-
-
-
-
-@media only screen and (max-width: 910px) {
+@media only screen and (min-width: 0px) {
   .responsive {
     width: 49.99999%;
-    margin: 0 25%;
+    margin: 6px 25%;
   }
-  /*.imgcontainer
-  {
-  margin: 0 25%;
-  }*/
-
 }
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 500px) {
   .responsive {
     width: 100%;
-    margin: 0 0%;
   }
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+/*test*/
+
+  /* Section Images */
+  
+  section#others {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/bigbais.jpg') no-repeat center center/cover;;
+  }
+   
+  section#main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../img/mapeheins.jpg') no-repeat center center/cover;;
+  }   
+  section#new {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/ag.jpg') no-repeat center center/cover;;
+  }  
+    
+  section#gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/ag.jpg') no-repeat center center/cover;;
+  } 
+  section#event {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/heycantstopusall.jpg') no-repeat center center/cover;;
+  }   
+  section#video {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/fd.jpg') no-repeat center center/cover;;
+  }   
+  section#countdown{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/images.jpg') no-repeat center center/cover;;
+  }   
+  section#vidmain{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../img/ffd.jpg') no-repeat center center/cover;;
+  }   
+  .news
+  {
+    text-decoration: none;
+    padding: 10px 10px;
+    color:#f4f4f4;
+    
+  }
+ .news:hover
+  {
+    color: skyblue;
+
+  }
+  .iframe-container{
+    position: relative;
+    width: 90%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  section h1 {
+    font-size: 4rem;
+  }
+    
+  .container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+        
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
